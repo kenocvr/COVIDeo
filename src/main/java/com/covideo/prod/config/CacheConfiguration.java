@@ -42,6 +42,9 @@ public class CacheConfiguration {
             createCache(cm, com.covideo.prod.domain.User.class.getName());
             createCache(cm, com.covideo.prod.domain.Authority.class.getName());
             createCache(cm, com.covideo.prod.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.covideo.prod.domain.Meeting.class.getName());
+            createCache(cm, com.covideo.prod.domain.Meeting.class.getName() + ".meetingParticipants");
+            createCache(cm, com.covideo.prod.domain.MeetingParticipant.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

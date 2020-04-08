@@ -1,0 +1,73 @@
+<div>
+    <h2 id="page-heading">
+        <span jhiTranslate="coviDeoApp.meeting.home.title">Meetings</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-meeting" [routerLink]="['/meeting/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span  jhiTranslate="coviDeoApp.meeting.home.createLabel">
+            Create a new Meeting
+            </span>
+        </button>
+    </h2>
+    <jhi-alert-error></jhi-alert-error>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="alert alert-warning" *ngIf="meetings?.length === 0">
+        <span jhiTranslate="coviDeoApp.meeting.home.notFound">No meetings found</span>
+    </div>
+    <div class="table-responsive" *ngIf="meetings?.length > 0">
+        <table class="table table-striped" aria-describedby="page-heading">
+            <thead>
+            <tr>
+            <th scope="col" ><span jhiTranslate="global.field.id">ID</span></th>
+            <th scope="col" ><span jhiTranslate="coviDeoApp.meeting.title">Title</span></th>
+            <th scope="col" ><span jhiTranslate="coviDeoApp.meeting.date">Date</span></th>
+            <th scope="col" ><span jhiTranslate="coviDeoApp.meeting.timeZone">Time Zone</span></th>
+            <th scope="col" ><span jhiTranslate="coviDeoApp.meeting.url">Url</span></th>
+            <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let meeting of meetings ;trackBy: trackId">
+                <td><a [routerLink]="['/meeting', meeting.id, 'view' ]">{{meeting.id}}</a></td>
+                <td>{{meeting.title}}</td>
+                <td>{{meeting.date | date:'medium'}}</td>
+                <td jhiTranslate="{{'coviDeoApp.TimeZone.' + meeting.timeZone}}">{{meeting.timeZone}}</td>
+                <td [innerHTML]="meeting.url"></td>
+                <td [routerLink]="meeting.url">
+
+                </td>
+                <td>
+                    <a href="http://localhost:8000/{{meeting.url}}">
+                        <div style="height:100%;width:100%">
+                            http://localhost:8000/{{meeting.url}}
+                        </div>
+                    </a>
+
+
+                </td>
+                <td class="text-right">
+                    <div class="btn-group">
+                        <button type="submit"
+                                [routerLink]="['/meeting', meeting.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/meeting', meeting.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+                        </button>
+                        <button type="submit" (click)="delete(meeting)"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

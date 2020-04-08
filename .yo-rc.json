@@ -38,6 +38,8 @@
     "enableTranslation": true,
     "nativeLanguage": "en",
     "languages": ["en", "fr", "de", "it", "es"],
-    "blueprints": []
+    "blueprints": [],
+    "herokuAppName": "covi-deo",
+    "herokuDeployType": "git"
   }
 }

@@ -1,0 +1,31 @@
+{
+    "name": "MeetingParticipant",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "user",
+            "otherEntityRelationshipName": "meetingParticipant",
+            "relationshipName": "user",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "meeting",
+            "otherEntityRelationshipName": "meetingParticipant",
+            "relationshipName": "meeting",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20200408010436",
+    "entityTableName": "meeting_participant",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

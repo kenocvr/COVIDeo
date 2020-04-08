@@ -1,0 +1,39 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="meeting">
+            <h2><span jhiTranslate="coviDeoApp.meeting.detail.title">Meeting</span> {{meeting.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="coviDeoApp.meeting.title">Title</span></dt>
+                <dd>
+                    <span>{{meeting.title}}</span>
+                </dd>
+                <dt><span jhiTranslate="coviDeoApp.meeting.date">Date</span></dt>
+                <dd>
+                    <span>{{meeting.date}}</span>
+                </dd>
+                <dt><span jhiTranslate="coviDeoApp.meeting.timeZone">Time Zone</span></dt>
+                <dd>
+                    <span jhiTranslate="{{'coviDeoApp.TimeZone.' + meeting.timeZone}}">{{meeting.timeZone}}</span>
+                </dd>
+                <dt><span jhiTranslate="coviDeoApp.meeting.url">Url</span></dt>
+                <dd>
+                    <span>{{meeting.url}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/meeting', meeting.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

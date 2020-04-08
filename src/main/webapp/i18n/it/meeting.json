@@ -1,0 +1,26 @@
+{
+  "coviDeoApp": {
+    "meeting": {
+      "home": {
+        "title": "Meetings",
+        "createLabel": "Genera un nuovo Meeting",
+        "createOrEditLabel": "Genera o modifica un Meeting",
+        "notFound": "No Meetings found"
+      },
+      "created": "&Egrave; stato generato un nuovo Meeting con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Meeting identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Meeting con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Meeting {{ id }}?"
+      },
+      "detail": {
+        "title": "Meeting"
+      },
+      "title": "Title",
+      "date": "Date",
+      "timeZone": "Time Zone",
+      "url": "Url",
+      "meetingParticipant": "Meeting Participant"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "coviDeoApp": {
+    "meetingParticipant": {
+      "home": {
+        "title": "MeetingParticipants",
+        "createLabel": "Genera un nuovo Meeting Participant",
+        "createOrEditLabel": "Genera o modifica un Meeting Participant",
+        "notFound": "No Meeting Participants found"
+      },
+      "created": "&Egrave; stato generato un nuovo Meeting Participant con identificatore {{ param }}",
+      "updated": "&Egrave; stato aggiornato Meeting Participant identificato da {{ param }}",
+      "deleted": "&Egrave; stato eliminato Meeting Participant con identificatore {{ param }}",
+      "delete": {
+        "question": "Sei sicuro di volere eliminare Meeting Participant {{ id }}?"
+      },
+      "detail": {
+        "title": "Meeting Participant"
+      },
+      "user": "User",
+      "meeting": "Meeting"
+    }
+  }
+}

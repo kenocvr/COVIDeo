@@ -1,0 +1,38 @@
+entity Meeting{
+	title String
+    date Instant,
+    timeZone TimeZone, 
+    url String,
+}
+
+
+
+enum TimeZone{
+	Hawaii, 
+    Alaska, 
+    Pacific, 
+    Mountain, 
+    Central,
+    Eastern
+}
+
+entity MeetingParticipant{
+	
+}
+
+
+
+relationship OneToOne{
+    
+    MeetingParticipant to User
+}
+
+relationship OneToMany{
+	Meeting to MeetingParticipant
+}
+
+
+
+service all with serviceImpl
+dto all with mapstruct
+filter all

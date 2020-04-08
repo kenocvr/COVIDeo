@@ -1,0 +1,40 @@
+{
+    "name": "Meeting",
+    "fields": [
+        {
+            "fieldName": "title",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "date",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "timeZone",
+            "fieldType": "TimeZone",
+            "fieldValues": "Hawaii,Alaska,Pacific,Mountain,Central,Eastern"
+        },
+        {
+            "fieldName": "url",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "meetingParticipant",
+            "otherEntityRelationshipName": "meeting",
+            "relationshipName": "meetingParticipant"
+        }
+    ],
+    "changelogDate": "20200408010435",
+    "entityTableName": "meeting",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": true,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

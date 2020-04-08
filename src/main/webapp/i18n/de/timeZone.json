@@ -1,0 +1,13 @@
+{
+  "coviDeoApp": {
+    "TimeZone": {
+      "null": "",
+      "Hawaii": "Hawaii",
+      "Alaska": "Alaska",
+      "Pacific": "Pacific",
+      "Mountain": "Mountain",
+      "Central": "Central",
+      "Eastern": "Eastern"
+    }
+  }
+}
