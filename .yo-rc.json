@@ -1,0 +1,43 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.covideo.prod",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "6.6.0",
+    "applicationType": "monolith",
+    "baseName": "COVIDeo",
+    "packageName": "com.covideo.prod",
+    "packageFolder": "com/covideo/prod",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": true,
+    "jwtSecretKey": "NGU1MTNjZmNhMzIwM2UxZTMzYjI4ODMyMDA4MjVkZDA3NmRhNjdkM2NmODQzNzc2NTBhYjFhN2FjNzc5MmUwZTEwOWY2NzQzZDRiN2E1NzMyOGZiMThkNzJhMmYyNDZjNzk2NjgwZTU1NmU5MDZiYzdhMjVkNDM4MjUyY2FiY2U=",
+    "embeddableLaunchScript": false,
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "angularX",
+    "clientTheme": "yeti",
+    "clientThemeVariant": "dark",
+    "creationTimestamp": 1586307625785,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": true,
+    "nativeLanguage": "en",
+    "languages": ["en", "fr", "de", "it", "es"],
+    "blueprints": []
+  }
+}
