@@ -3,10 +3,6 @@
 <main class="intro-section">
     <div class="container">
         <div class="grid">
-            <div class="column-xs-12">
-                <ul class="slider">
-                    <li class="slider-item active">
-                        <div class="grid vertical">
                             <div class="column-xs-12 column-md-2 hide-mobile">
                                 <div class="intro">
                                     <a href="#">
@@ -14,67 +10,10 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="column-xs-12 column-md-10">
-                                <div class="image-holder">
-                                    <img src="https://raw.githubusercontent.com/kenocvr/COVIDeo/master/src/main/webapp/app/home/3629604.jpg" >
-                                </div>
-                                <div class="grid">
-                                    <div class="column-xs-12 column-md-9">
-                                        <div class="intro show-mobile">
-                                            <a href="#">
-                                                <h1 class="title"><span class="underline">Welcome to COVIDeo</span></h1>
-                                            </a>
-                                        </div>
-                                        <p class="description">COVIDeo = COVID19 + Video</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
 
-                </ul>
-                <div class="grid">
+                                    <img [class.hipster]="netImage" >
 
-                    </div>
                 </div>
-            </div>
+
         </div>
 </main>
-<div class="row">
-    <div class="col-md-9">
-
-        <img [class.hipster]="netImage" >
-
-
-
-
-    </div>
-
-    <div class="col-md-9">
-        <span></span>
-
-        <div>
-
-            <div class="row">
-
-
-                <div class="col-md-9">
-                    <h1 class="display-4" jhiTranslate="home.title">To COVIDeo!!!</h1>
-                    <p class="lead" >Video Conferencing in the age of COVID-19</p>
-                    <div [ngSwitch]="isAuthenticated()">
-                        <div class="alert alert-success" *ngSwitchCase="true">
-                <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message"
-                      [translateValues]="{username: account.login}"> You are logged in as user "{{account.login}}". </span>
-                        </div>
-
-
-                    </div>
-
-
-
-                </div>
-
-            </div>
-
-</div>
-    </div></div>
