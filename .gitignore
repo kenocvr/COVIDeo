@@ -5,6 +5,8 @@
 /target/classes/static/**
 /src/test/javascript/coverage/
 
+/docker-jitsi-meet/*
+
 ######################
 # Node
 ######################
