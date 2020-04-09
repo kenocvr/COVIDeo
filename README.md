@@ -3,6 +3,8 @@
 A Video Conferencing application using Jitsi.
 COVIDeo = COVID + Video
 
+![alt text](https://raw.githubusercontent.com/kenocvr/COVIDeo/master/src/main/webapp/app/assets/images/landing-img.png 'Logo Title Text 1')
+
 ##### Backend (Spring Boot). Port: 8080
 
 ##### Frontend (Angular). Port: 9000
