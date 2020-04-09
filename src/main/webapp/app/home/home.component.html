@@ -1,41 +1,165 @@
-<div class="row">
-    <div class="col-md-3">
-        <span class="hipster img-fluid rounded"></span>
-    </div>
-    <div class="col-md-9">
-        <h1 class="display-4" jhiTranslate="home.title">To COVIDeo!</h1>
-        <p class="lead" jhiTranslate="home.subtitle">Video Conferencing in the age of COVID-19</p>
 
-        <div [ngSwitch]="isAuthenticated()">
-            <div class="alert alert-success" *ngSwitchCase="true">
-                <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message"
-                    [translateValues]="{username: account.login}"> You are logged in as user "{{account.login}}". </span>
-            </div>
 
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to </span>
-                <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign in</a><span jhiTranslate="global.messages.info.authenticated.suffix">, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
-            </div>
-            <div class="alert alert-warning" *ngSwitchCase="false">
-                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>&nbsp;
-                <a class="alert-link" routerLink="account/register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
+<main class="intro-section">
+    <div class="container">
+        <div class="grid">
+            <div class="column-xs-12">
+                <ul class="slider">
+                    <li class="slider-item active">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Welcome to COVIDeo</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://image.freepik.com/free-vector/telecommuting-concept-illustration_114360-1620.jpg" >
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Welcome to COVIDeo</span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Tokyo, Japan’s busy capital, mixes the ultramodern and the traditional, from neon-lit skyscrapers to historic temples.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Explore Kyoto</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://source.unsplash.com/Pz3EHf-KJfc">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Explore Kyoto</span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Kyoto is famous for its numerous classical Buddhist temples, gardens, imperial palaces, Shinto shrines and traditional wooden houses.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Explore Osaka</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://source.unsplash.com/peYW3VwICpE">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Explore Osaka</span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Osaka is a large port city and commercial center known for its modern architecture, nightlife and hearty street food.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="slider-item">
+                        <div class="grid vertical">
+                            <div class="column-xs-12 column-md-2 hide-mobile">
+                                <div class="intro">
+                                    <a href="#">
+                                        <h1 class="title"><span class="underline">Explore Hokkaido</span></h1>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="column-xs-12 column-md-10">
+                                <div class="image-holder">
+                                    <img src="https://source.unsplash.com/VmeOZQjTVGE">
+                                </div>
+                                <div class="grid">
+                                    <div class="column-xs-12 column-md-9">
+                                        <div class="intro show-mobile">
+                                            <a href="#">
+                                                <h1 class="title"><span class="underline">Explore Hokkaido</span></h1>
+                                            </a>
+                                        </div>
+                                        <p class="description">Hokkaido, the northernmost of Japan’s main islands, is known for its volcanoes, natural hot springs ("onsen") and ski areas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="grid">
+                    <div class="column-xs-12">
+                        <div class="controls">
+                            <button class="previous">
+                                <i class="ion-ios-arrow-thin-left"></i>
+                                </a>
+                                <button class="next">
+                                    <i class="ion-ios-arrow-thin-right"></i>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+</main>
+<div class="row">
+    <div class="col-md-9">
 
-        <p jhiTranslate="home.question">
-            If you have any question on JHipster:
-        </p>
+        <img [class.hipster]="netImage" >
 
-        <ul>
-            <li><a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.homepage">JHipster homepage</a></li>
-            <li><a href="http://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.stackoverflow">JHipster on Stack Overflow</a></li>
-            <li><a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.bugtracker">JHipster bug tracker</a></li>
-            <li><a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.chat">JHipster public chat room</a></li>
-            <li><a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.link.follow">follow @jhipster on Twitter</a></li>
-        </ul>
 
-        <p>
-            <span jhiTranslate="home.like">If you like JHipster, don't forget to give us a star on</span> <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer" jhiTranslate="home.github">GitHub</a>!
-        </p>
+
+
     </div>
+
+    <div class="col-md-9">
+        <span></span>
+
+        <div>
+
+            <div class="row">
+
+
+                <div class="col-md-9">
+                    <h1 class="display-4" jhiTranslate="home.title">To COVIDeo!!!</h1>
+                    <p class="lead" >Video Conferencing in the age of COVID-19</p>
+                    <div [ngSwitch]="isAuthenticated()">
+                        <div class="alert alert-success" *ngSwitchCase="true">
+                <span id="home-logged-message" *ngIf="account" jhiTranslate="home.logged.message"
+                      [translateValues]="{username: account.login}"> You are logged in as user "{{account.login}}". </span>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
 </div>
+    </div></div>

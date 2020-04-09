@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit, OnDestroy {
   account: Account | null = null;
   authSubscription?: Subscription;
 
+  netImage: any = 'src/main/webapp/content/images/3629604.jpg';
+
   constructor(private accountService: AccountService, private loginModalService: LoginModalService) {}
 
   ngOnInit(): void {
