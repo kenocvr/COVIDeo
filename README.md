@@ -23,7 +23,7 @@ auto-refreshes when files change on your hard drive.
 
 ##### (HTTP) Port: 8000 or (HTTPS) Port: 8443
 
-    cd docker-jitsi-meet
+    cd docker-jitsi
     docker-compose up -d
 
 Then navigate to [http://localhost:8080](http://localhost:8080) in your browser.
