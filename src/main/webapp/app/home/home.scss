@@ -173,6 +173,7 @@ button {
 }
 
 .active .image-holder::before {
+  object-fit: contain;
   position: relative;
   content: '';
   z-index: 1;
