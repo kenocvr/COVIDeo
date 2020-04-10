@@ -3,7 +3,6 @@ import { HttpResponse } from '@angular/common/http';
 import { Subscription } from 'rxjs';
 import { JhiEventManager } from 'ng-jhipster';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import * as ExternalApi from './external_api';
 
 import { IMeeting } from 'app/shared/model/meeting.model';
 import { MeetingService } from './meeting.service';
