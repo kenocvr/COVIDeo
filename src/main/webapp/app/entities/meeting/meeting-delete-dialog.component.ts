@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { JhiEventManager } from 'ng-jhipster';
+import * as ExternalApi from './external_api';
 
 import { IMeeting } from 'app/shared/model/meeting.model';
 import { MeetingService } from './meeting.service';

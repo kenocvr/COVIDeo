@@ -14,6 +14,7 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { PageRibbonComponent } from './layouts/profiles/page-ribbon.component';
 import { ActiveMenuDirective } from './layouts/navbar/active-menu.directive';
 import { ErrorComponent } from './layouts/error/error.component';
+import { SafePipe } from './safe.pipe';
 
 @NgModule({
   imports: [
@@ -25,7 +26,7 @@ import { ErrorComponent } from './layouts/error/error.component';
     CoviDeoEntityModule,
     CoviDeoAppRoutingModule
   ],
-  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent],
+  declarations: [MainComponent, NavbarComponent, ErrorComponent, PageRibbonComponent, ActiveMenuDirective, FooterComponent, SafePipe],
   bootstrap: [MainComponent]
 })
 export class CoviDeoAppModule {}
