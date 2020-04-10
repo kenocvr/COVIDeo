@@ -1,4 +1,4 @@
-# COVIDeo
+# COVIDeo [Early Beta]
 
 A Video Conferencing application using Jitsi.
 COVIDeo = COVID + Video
