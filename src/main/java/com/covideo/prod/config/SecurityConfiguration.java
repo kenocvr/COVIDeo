@@ -67,7 +67,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
         .and()
             .headers()//    content="default-src 'none'; connect-src 'self';font-src 'self'; img-src 'self' data: https:; style-src 'self' ; script-src 'self'">
 
-            .contentSecurityPolicy("default-src *")
+            .contentSecurityPolicy("default-src 'none'; connect-src 'self'; frame-src  *; font-src 'self'; img-src 'self' data: https:; style-src 'self' ; script-src 'self'")
         .and()
             .referrerPolicy(ReferrerPolicyHeaderWriter.ReferrerPolicy.STRICT_ORIGIN_WHEN_CROSS_ORIGIN)
         .and()
