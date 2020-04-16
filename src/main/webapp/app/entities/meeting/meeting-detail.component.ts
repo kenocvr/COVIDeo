@@ -20,7 +20,7 @@ export class MeetingDetailComponent implements OnInit {
   ngOnInit(): void {
     this.activatedRoute.data.subscribe(({ meeting }) => {
       this.meeting = meeting;
-      this.url += '?x=' + this.meeting.url;
+      this.url += '?x=' + meeting.url;
       this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl(this.url);
     });
   }
